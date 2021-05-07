@@ -1,0 +1,157 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+/* non-standard code */ 
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 60px 40px auto 80px;
+    grid-template-areas: 
+        "h h h h h h h h h h h h"
+        "m m m m m m m m m m m m"
+        "c c c c c c c c c c c c"
+        "f f f f f f f f f f f f";
+}
+
+.header {
+    grid-area: h;
+	font-family: 'Press Start 2P';
+	
+}	
+
+.menu {
+    grid-area: m;
+	font-family: 'Press Start 2P';
+}
+
+.content {
+    grid-area: c;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    background-attachment: fixed
+	
+	
+}
+.content img {
+	height: 600px;
+	align-self: center;
+	
+}
+
+.left-parrot {
+	transform: scaleX(-1);
+}
+
+.footer {
+    grid-area: f;
+	font-family: 'Press Start 2P';
+	
+}
+
+.container > div {
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	font-size: 2em;
+	color: #96ceb4;
+  }
+  
+  html, body {
+	box-sizing: border-box;
+	background-color: black;
+	height: 100%;
+	padding: 10px;
+	margin: 0px;
+  }
+  
+  .container  div:nth-child(1n) {
+	background-color: #96ceb4;
+	color: brown;
+  }
+  
+  .container  div:nth-child(3n) {
+	
+	color: brown;
+  }
+  
+  .container  div:nth-child(2n) {
+	background-color: #96ceb4;
+	color: brown;
+  }
+  
+  .container  div:nth-child(4n) {
+	background-color:  #88d8b0;
+	color: brown;
+  
+  
+ 
+  
